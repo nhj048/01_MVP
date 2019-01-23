@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*Grid View*/
+.grid{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);/*가로중앙이동*/
+    width: 1200px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: -1;/*화면아래로 내림*/
+}
+.grid::after{/*float해제*/
+    content: "";
+    display: block;
+    clear: both;
+}
+.grid li{
+    float: left;
+    width: 8.333%;/*100/12*/
+    height: 100%;
+    background-color: #edcfcf;
+    padding: 0 10px;/*사이간격:20px*/
+    box-sizing: border-box;/*패딩,보더 포함박스*/
+    background-clip: content-box;/*배경영역이 내용까지만(패딩,보더제외)*/
+    /*
+        background-clip:border-box는 보더까지 전부다 배경영역임(기본값)
+        background-clip:padding-box는 패딩까지만 배경영역임(보더제외)
+    */
+}
