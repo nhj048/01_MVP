@@ -25,6 +25,7 @@
     padding: 0 10px;/*사이간격:20px*/
     box-sizing: border-box;/*패딩,보더 포함박스*/
     background-clip: content-box;/*배경영역이 내용까지만(패딩,보더제외)*/
+    display: none;
     /*
         background-clip:border-box는 보더까지 전부다 배경영역임(기본값)
         background-clip:padding-box는 패딩까지만 배경영역임(보더제외)
