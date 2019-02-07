@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.fullbox{ /* 겉박스 */
+	width: 100%;
+	position: relative;
+}
+.inbox{ /* 속박스 */
+	position: relative;
+	width: 1200px;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+#gnbbox>li:nth-child(1)>a::before, #gnbbox>li:nth-child(2)>a::before,
+#gnbbox>li:nth-child(3)>a::before, #gnbbox>li:nth-child(4)>a::before,
+.arrow, #adSearch::after, #recentView::after, #intView::after,.bullet>li{
+	background: url(../images/icon.png) no-repeat;
+}

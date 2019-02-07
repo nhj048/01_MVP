@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+<title>AboutB_2nd</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<style>
+
+/*탑영역 디자인*/
+#top {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	z-index: 999999;/*맨위*/
+	background-color: rgba(0,0,0,.7);/*반투명검은배경*/
+}
+.inbox {/*속박스-사이트품위유지*/
+	position: relative;/*부모자격*/
+	max-width: 1400px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;/*박스중앙*//*        outline: 1px solid lime;*/
+}
+#logo {/*로고*/
+	position: absolute;
+	display: block;
+	width: 250px;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+#logo img {
+	position: relative;
+	top: -30px;
+	width: 100%;
+}
+/*GNB 네비게이션*/
+#gnb {
+	position: absolute;
+	top: 40px;
+	right: 2%;
+}
+#gnb li {
+	margin: 0 7px;
+}
+/*메뉴에 마우스 오버시*/
+#gnb a:hover {
+	color: lime;
+	text-decoration: overline;/*윗줄*/
+}
+#gnb li:hover {
+	transform: scale(1.1);/*옆의 인라인요소에 영향없음*/
+}
+/*메뉴에 마우스 오버시와 같은 디자인의 class를 만들어 선택메뉴에 주기*/
+.selM a {
+	color: lime;
+	text-decoration: overline;/*윗줄*/
+}
+.selM {
+	transform: scale(1.1);/*옆의 인라인요소에 영향없음*/
+}
+/*개별페이지 디자인*/
+.page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#page1 {
+	background: url(images/pic1.png) no-repeat top/cover;
+}
+#page2 {
+	background: url(images/pic2.png) no-repeat top/cover;
+}
+#page3 {
+	background: url(images/pic3.png) no-repeat top/cover;
+}
+#page4 {
+	background: url(images/pic4.png) no-repeat top/cover;
+}
+#page5 {
+	background: url(images/pic5.png) no-repeat top/cover;
+}
+#page6 {
+	background: url(images/pic6.png) no-repeat top/cover;
+}
+#page7 {
+	background: url(images/pic7.png) no-repeat top/cover;
+}
+/* 각 페이지 등장 이미지 공통*/
+.pic {
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 20px #fff;
+	border-radius: 10px;
+	opacity: 0; /*처음에 안보이게*/
+}
+</style>
+</head>
+
+<body>
+<!--탑부분-->
+<header id="top">
+  <div class="inbox"> 
+    <!--로고--> 
+    <a href="#" id="logo"> <img src="images/logo.png" alt="메가박스로고"> </a> 
+    <!--GNB메뉴-->
+    <nav id="gnb">
+      <ul>
+        <li class="selM"> <a href="#page1">아수라</a> </li>
+        <li> <a href="#page2">고산자</a> </li>
+        <li> <a href="#page3">인천상륙작전</a> </li>
+        <li> <a href="#page4">봉이김선달</a> </li>
+        <li> <a href="#page5">비밀은없다</a> </li>
+        <li> <a href="#page6">아가씨</a> </li>
+        <li> <a href="#page7">탐정홍길동</a> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--각 페이지박스--> 
+<!--section#page$.page*7-->
+<section id="page1" class="page"><img src="images/m1.jpg" alt="장면" class="pic"></section>
+<section id="page2" class="page"><img src="images/m2.jpg" alt="장면" class="pic"></section>
+<section id="page3" class="page"><img src="images/m3.jpg" alt="장면" class="pic"></section>
+<section id="page4" class="page"><img src="images/m4.jpg" alt="장면" class="pic"></section>
+<section id="page5" class="page"><img src="images/m5.jpg" alt="장면" class="pic"></section>
+<section id="page6" class="page"><img src="images/m6.jpg" alt="장면" class="pic"></section>
+<section id="page7" class="page"><img src="images/m7.jpg" alt="장면" class="pic"></section>
+</body>
+</html>

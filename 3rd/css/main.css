@@ -1,0 +1,387 @@
+@charset "utf-8";
+@import url(core.css);
+@import url(common.css);
+@import url(search.css);
+@import url(GDbg.css);
+@import url(GDset.css);
+
+/* TOP */
+#TOP{
+	height: 40px;
+	background-color: #2c2c2c;
+}
+#topmenu{
+	position: relative;
+	width: 200px;
+	float: right;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#topmenu>li{
+	width: 50%;
+	text-align: right;
+}
+#topmenu>li>a{
+	color: #ccc;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+/* GNB */
+#GNB{
+	height: 80px;
+	background-color: #fff;
+}
+#logo{
+	position: relative;
+	width: 238px;
+	height: 100%;
+	/*top: 50%;
+	transform: translateY(-50%);*/
+}
+#logo>a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#logo>a>img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#gnbbox{
+	position: absolute;
+	float: right;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	width: 800px;
+	font-size: 24px;
+}
+#gnbbox>li{
+	position: relative;
+	width: 25%;
+	text-align: right;
+}
+#gnbbox>li>a{
+	font-weight: 500;
+}
+#gnbbox>li:nth-child(1)>a::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 7px;
+	left: 83px;
+	background-position:-81px -10px;
+}
+#gnbbox>li:nth-child(2)>a::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 7px;
+	left: 90px;
+	background-position: -53px -11px;
+}
+
+#gnbbox>li:nth-child(3)>a::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 5px;
+	left: 65px;
+	background-position: -110px -10px;
+}
+#gnbbox>li:nth-child(4)>a::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 7px;
+	left: 82px;
+	background-position: -24px -12px;
+}
+
+/* BANNER */
+#BANNER{
+	height: 300px;
+	background: url(../images/bg2.jpg) no-repeat center/cover;
+	border-top: 1px solid #ffcc00;
+}
+.bantxt{
+	position: absolute;
+	/*left: 50%;
+	transform: translateX(-50%);*/
+	font-size: 36px;
+	font-weight: 500;
+	color: #eee;
+}
+/* 배너 Text */
+.bantxt1{
+	top: 20%;
+	font-size: 24px;
+	color: #ccc;
+	text-shadow: 1px 1px 1px black;
+}
+.bantxt2{
+	top: 35%;
+	text-shadow: 1px 1px 1px black;
+}
+/* 배너 넘김 Arrow */
+.arrow{
+	position: absolute;
+	width: 56px;
+	height: 110px;
+	top: 20%;
+}
+.lArrow{
+	left: 200px;
+	background-position: -24px -64px;
+}
+.lArrow:hover{
+	background-position: -94px -64px;
+}
+.rArrow{
+	right: 200px;
+	background-position: -234px -64px;
+}
+.rArrow:hover{
+	background-position: -164px -64px;
+}
+
+/* CONTENTS */
+#CONTENTS{
+	min-height: 550px;
+	background-color: #fff;
+	padding: 30px 0 30px 0;
+	/*border: 1px solid red;*/
+}
+#CONTENTS>div>ul{
+	padding-top: 250px;
+}
+#CONTENTS>div>ul>li{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+/* 어바웃비 소개 */
+.conTbox{
+	position: relative;
+	padding: 15px;
+}
+.contTit{
+	font-size: 28px;
+	font-weight: 500;
+	color: #ffcc00;
+}
+.contTxt{
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #666;
+}
+.intro{
+	height: 300px;
+	/*border: 1px solid green;*/
+}
+.intro>ul>li{
+	width: 100%;
+}
+.intro>ul>li:nth-child(3)>img{
+	height: 150px;
+}
+.intro>ul>li:nth-child(3)::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	/*background-color: #ccc;*/
+	background-position: -305px -4px;
+}
+/* 빠른이동 아이콘 */
+.icon{
+	position: relative;
+	height: 300px;
+}
+.icon>ul{
+	position: relative;
+	height: 100%;
+}
+.icon>ul>li{
+	position: relative;
+	height: 50%;
+	/*border: 1px solid green;*/
+}
+.icon>ul>li:nth-child(-n+4){
+	border-bottom: 1px solid #ccc;
+}
+.icon>ul>li:nth-child(-n+3){
+	border-right: 1px solid #ccc;
+}
+.icon>ul>li:nth-child(n+5){
+	border-right: 1px solid #ccc;
+}
+.icon>ul>li:last-child{
+	border-right: none;
+}
+.icon>ul>li>p{
+	text-align: center;
+	padding-top: 10px;
+}
+.icon>ul>li>p{
+	display: block;
+}
+.iconImg{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+.icon>ul>li:nth-child(1)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(2)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(3)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(4)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(5)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(6)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(7)>a{
+	background-position: -464px -8px;
+}
+.icon>ul>li:nth-child(8)>a{
+	background-position: -464px -8px;
+}
+/* 쉬운 검색 */
+.easyPage{
+	position: relative;
+	height: 300px;
+	border-right: 1px solid #ccc;
+}
+.easyPage>ul>li:nth-child(3)::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -80px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background-position: -305px -4px;
+}
+/* FOOTERMENU */
+#FOOTERMENU{
+	height: 50px;
+	background-color: #2c2c2c;
+	color: #999;
+	font-size: 14px;
+	border-top: 1px solid #ffcc00;
+}
+.fmBox{
+	position: relative;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.fmBox>li{
+	width: 20%;
+	padding: 10px;
+}
+.fmBox>li>a{
+	color: #ccc;
+}
+
+/* FOOTER */
+#FOOTER{
+	height: 120px;
+	background-color: #2c2c2c;
+	font-size: 14px;
+	color: #999;
+}
+#FOOTER>.inbox>ul{
+	padding-top: 20px;
+}
+#FOOTER>.inbox>ul>li:first-child>img{
+	height: 40px;
+}
+
+/* SNB */
+.SNB{
+	position: fixed;
+	right: 0;
+	width: 90px;
+	height: 70px;
+	border: 1px solid #000;
+	border-radius: 10%;
+	background-color: #2c2c2c;
+}
+.SNB>span{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	color: #ccc;
+}
+#adSearch{
+	top: 40%;
+}
+#adSearch::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 25px;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-position: -171px -11px;
+}
+#recentView{
+	top: 48%;
+}
+#recentView::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 25px;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-position: -200px -11px;
+}
+#intView{
+	top: 56%;
+}
+#intView::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 25px;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-position: -227px -12px;
+}

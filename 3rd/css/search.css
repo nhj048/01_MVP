@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+/* 메인 Search */
+#search{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	min-height: 500px;
+	background-color: #fff;
+	z-index: 999;
+	box-shadow: 0px 2px 5px 0px #ccc;
+	/*border: 1px solid red;*/
+}
+.searchBox{
+	position: relative;
+	width: 100%;
+	padding: 50px 50px 70px 50px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.rec{
+	position: relative;
+}
+.rec>li{
+	padding: 0 5px 5px 0;
+}
+.rec>li>a{
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	text-decoration: underline;
+	color: #666;
+	padding: 2px 7px;
+	/*border: 1px solid #ffcc00;
+	border-radius: 2px;*/
+}
+.rec>li:nth-child(1){
+	padding-left: 76.89px;
+	padding-top: 3px;
+}
+.rec>li:nth-child(1){
+	text-decoration: none !important;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	color: #666;
+}
+.searchBar{
+	position: relative;
+}
+.searchBar>li:nth-child(1){
+	padding-right: 20px;
+}
+.searchBar>li:nth-child(1)>label{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 50px;
+}
+#searchCltrNm{
+	width: 800px; /*800px*/
+	height: 50px;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 4px solid #ffcc00;
+}
+.caNo{
+	position: relative;
+	float: left;
+}
+.caNo>li:nth-child(1){
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 50px;
+	padding-right: 20px;
+}
+.caNo>li:nth-child(2){
+	padding: 10px 10px 10px 0;
+}
+.caNo>li:nth-child(2)>select{
+	width: 120px;
+	height: 30px;
+	padding-right: 10px;	
+}
+.caNo>li:nth-child(3){
+	font-size: 16px;
+	/*font-weight: 400;*/
+	line-height: 50px;
+	padding-right: 15px;
+}
+.caNo>li:nth-child(4){
+	padding: 10px 5px 10px 0;
+}
+.caNo>li:nth-child(4)>input{
+	width: 120px;
+	height: 30px;
+	font-size: 16px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid rgb(169,169,169);
+}
+.caCal{
+	position: relative;
+	float: left;
+	padding-left: 153px;
+}
+.caCal>li:nth-child(1){
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 50px;
+	padding-right: 20px;
+}
+.caCal>li:nth-child(2){
+	padding: 10px 10px 10px 0;
+}
+.caCal>li:nth-child(2)>select{
+	width: 120px;
+	height: 30px;
+}
+.caCal>li:nth-child(3){
+	font-size: 16px;
+	/*font-weight: 400;*/
+	line-height: 50px;
+	padding-right: 15px;
+}
+.caCal>li:nth-child(4){
+	padding: 10px 10px 10px 0;
+}
+.caCal>li:nth-child(4)>select{
+	width: 120px;
+	height: 30px;
+}
+#topSearchBtn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 77px 140px 0 0px;
+	font-size: 18px;
+	font-weight: 400;
+	width: 93px;
+	height: 93px;
+	color: #f9f9f9;
+	border: none;
+	background-color: #2c2c2c;
+}
+
+/* tabBox */
+.tabBox{
+	position: relative;
+	width: 100%;
+	padding: 20px 50px 20px 50px;
+}
+.tabBox>ul>li{
+	width: 15.2%;
+	margin-right: 6%;
+	text-align: center;
+	border: 2px solid #666;
+	border-radius: 2px;
+}
+.tabBox>ul>li:hover{
+	border: 2px solid #ffcc00;
+}
+.tabBox>ul>li:hover>a{
+	font-weight: 500;
+}
+.tabBox>ul>li:first-child{
+	border: 2px solid #ffcc00;
+}
+.tabBox>ul>li:first-child>a{
+	font-weight: 500;
+}
+.tabBox>ul>li:last-child{
+	margin-right: 0 !important;
+}
+.tabBox>ul>li>a{
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+}
+
+/* selectBox */
+.selBox{
+	position: relative;
+	width: 100%;
+	padding: 0 50px 20px 50px;
+	/*border-bottom: 1px solid rgba(0,0,0,.1);*/
+}
+.selBox>ul{
+	padding: 15px 0 15px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.firstChk{
+	width: 150px;
+	padding: 5px 0 5px 0;
+	font-weight: 500;
+}
+.sangseChk{
+	position: relative;
+	width: 950px;
+}
+.sangseChk>li{
+	width: 14%;
+	padding: 5px 0 5px 0;
+}
+.selChkBox{
+	position: relative;
+	width: 100%;
+	padding: 0 50px 20px 50px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.selChkBox>div:first-child{
+	width: 850px;
+	/*border: 1px solid red;*/
+}
+.selChkBox>div:first-child>ul>li{
+	padding: 2px 2px 2px 5px;
+	margin: 2px 5px;
+	border: 1px solid #ffcc00;
+	border-radius: 2px;
+}
+.selChkBox>div:first-child>ul>li>a{
+	font-size: 14px;
+	line-height: 26px;
+}
+.selChkBox>div:first-child>ul>li>a::after{
+	content: "X";
+	display: block;
+	position: static;
+	float: right;
+	top: 0;
+	right: 0;	
+	width: 20px;
+	height: 20px;
+	line-height: 26px;
+	padding-left: 10px;
+}
+#botSearchBtn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 140px;
+	font-size: 18px;
+	font-weight: 400;
+	width: 140px;
+	height: 72px;
+	color: #f9f9f9;
+	border: none;
+	background-color: #2c2c2c;
+}
