@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/list.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/list.js"></script>
+<script src="js/Inc.js"></script>
+<title>About B - List</title>
+</head>
+
+<body>
+<!--HEADER INCLUDE-->
+<header id="incHEADER" class="fullbox"></header>
+
+<!--SEARCH INCLUDE-->
+<section id="incSEARCH" class="fullbox"></section>
+
+<!--CONTENTS-->
+<section id="listCont">
+  <div class="inbox listBox">
+    <div class="listTOP"> <span>이번 주 신건</span>
+      <ul class="listFilter">
+        <li><a href="#">감정가</a><span>▲</span></li>
+        <li><a href="#">최저가</a><span>▲</span></li>
+        <li><a href="#">유찰횟수</a><span>▲</span></li>
+        <li><a href="#">매각기일</a><span>▲</span></li>
+        <li><a href="#">조회수</a><span>▲</span></li>
+      </ul>
+    </div>
+    <div class="listTOP2"> <span>총 5건</span>
+		<div class="listStArea">
+			<a href="#" class="listSet">리스트조건설정</a>
+			<ul>
+				<li><a href="#" class="listView"><span class="bld">리스트 보기</span></a></li>
+				<li><a href="#" class="cardView"><span class="bld">카드 보기</span></a></li>
+      		</ul>
+		</div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER INCLUDE-->
+<footer id="incFOOTER" class="fullbox"></footer>
+</body>
+<script type="text/javascript">
+$(function(){
+	$("#incSEARCH").load("search.html");
+});
+</script>
+</html>
