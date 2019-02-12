@@ -4,6 +4,9 @@
 @import url(search.css);
 @import url(GDbg.css);
 @import url(GDset.css);
+.listBox{
+	padding-bottom: 50px;
+}
 #listCont{
 	min-height: 300px;
 }
@@ -46,24 +49,127 @@
 /*	float: right;*/
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 10px;
 }
 .listSet{
 	padding-left: 20px;
-	margin-right: 30px;
+	margin-right: 50px;
 	line-height: 50px;
-	background-position: -301px -15px;
+	background-position: -1173px -15px;
 }
 .listStArea>ul{
 	float: right;
+	padding-top: 13px;
+	padding-bottom: 13px;
 }
 .listStArea>ul>li{
 	width: 24px;
-	height: 50px;
+	height: 24px;
+}
+.listStArea>ul>li:nth-child(2){
+	margin-left: 20px;
 }
 .listView{
-	background-position: -329px -16px;
+	background-position: -395px -16px;
+}
+.listView::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 24px;
+	top: 13px;;
+	right: 35px;;
+	background-color: #eee;
 }
 .cardView{
 	background-position: -362px -16px;
+}
+/* 리스트 박스 */
+.saListBox{
+	position: relative;
+	width: 100%;
+	height: 191px;
+	border: 1px solid #eee;
+	box-shadow: 0px 3px 3px 0px #eee;
+	margin-top: 29px;
+	padding: 20px;
+}
+.saAddr{
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.favorite{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #999;
+}
+.favoriteBtn{
+	position: absolute;
+	top: 20px;
+	right: 75px;
+	color: #999;
+}
+.listTable{
+	font-size: 16px;
+	border-top: 1px solid #eee;
+}
+.listTable>li:last-child>ul>li{
+	width: 100%;
+}
+.tbSbox{
+	position: relative;
+	padding: 0;
+	margin-top: 13px;
+/*	border: 1px solid red;*/
+}
+.tbSbox>ul>li{
+	line-height: 29px;
+}
+.tbSbox:not(:last-child){
+	border-right: 1px solid #eee;
+}
+
+.tbSbox:nth-child(1)>ul>.tbTit{
+	padding-left: 10px;
+}
+.tbTit{
+	width: 30%;
+	color: #999;
+	padding-left: 30px;
+}
+.tbTxt{
+	width: 70%;
+	padding-right: 30px;
+	text-align: right;
+}
+.moneyTit{
+	line-height: 43px !important;
+}
+.moneyTxt{
+/*	102-29 = 73 /2 = 36.5*/
+	line-height: 43px !important;
+	font-size: 16px;
+}
+.gamMoney{
+	color: #00adb5;
+}
+.attentionIcon{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	left: 30px;
+}
+.attTit{
+	color: #999;
+	position: absolute;
+	bottom: 0px;
+	left: 30px;
+}
+.attTxt{
+	padding-right: 10px;
+	color: #fc5185;
 }

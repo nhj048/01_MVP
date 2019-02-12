@@ -7,17 +7,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/main.js"></script>
-<script src="js/Inc.js"></script>
 <title>About B</title>
 </head>
 <body>
 
 <!--HEADER INCLUDE-->
-<header id="incHEADER" class="fullbox"></header>
+<header id="incHEADER" class="fullbox">
+	<script>$("#incHEADER").load("header.html");</script>
+</header>
 
 <!--BANNER -->
 <section id="BANNER" class="fullbox">
-  <div class="banImg"></div>
+	<div class="rollArea">
+		<div class="roll r0 active"><span class="bld">1</span></div>
+		<div class="roll r1"><span class="bld">2</span></div>
+		<div class="roll r2"><span class="bld">3</span></div>
+	</div>
   <div class="inbox">
     <p class="bantxt bantxt1">진정한 성공의 의미를 아는 당신</p>
     <p class="bantxt bantxt2">당신의 행복에 어바웃비가 함께 합니다</p>
@@ -32,7 +37,9 @@
 </section>
 
 <!--SEARCH INCLUDE-->
-<section id="incSEARCH" class="fullbox"></section>
+<section id="incSEARCH" class="fullbox">
+	<script>$("#incSEARCH").load("search.html");</script>
+</section>
 
 <section id="CONTENTS">
   <div class="inbox contbox">
@@ -81,7 +88,9 @@
 --> 
 
 <!--FOOTER INCLUDE-->
-<footer id="incFOOTER" class="fullbox"></footer>
+<footer id="incFOOTER" class="fullbox">
+	<script>$("#incFOOTER").load("footer.html");</script>
+</footer>
 
 <!-- 우측 고정 네비게이션 -->
 <div id="recentView" class="SNB"> <span>최근본물건</span> </div>
@@ -103,10 +112,12 @@
   <li></li>
 </ul>
 <!--Grid View End-->
+<!--
 <script type="text/javascript">
 	$(function(){
 		$("#incSEARCH").load("search.html");
 	});
 </script>
+-->
 </body>
 </html>

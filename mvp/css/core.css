@@ -10,7 +10,7 @@
 }
 html{
 	font-size: 14px;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: -1px;
 	color: #222831;
 }
@@ -42,6 +42,60 @@ li,dl{
 select,input{
 	border-radius: 5px;
 }
+
+
+/*
+input[type="checkbox"]{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0
+}
+input[type="checkbox"] + label {
+	display: inline-block;
+	position: relative;
+	cusor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input[type="checkbox"] + label:before {
+	content: ' ';
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	line-height: 13px;
+	margin: -2px 8px 0 0;
+	text-align: center;
+	vertical-align: middle;
+	background: #fafafa;
+	border: 1px solid #cacece;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+input[type="checkbox"] + label:active:before,input[type="checkbox"]:checked + label:active:before {
+	background-color: #00adb5;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+input[type="checkbox"]:checked + label:before {
+	content: '\2713';
+	color: #fff;
+	background: #00adb5;
+	border-color: #adb8c0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+
+*/
+
+
+
+
+
 
 /*태그 초기화 설정*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,

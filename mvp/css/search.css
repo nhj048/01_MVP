@@ -32,7 +32,7 @@
 	text-decoration: none !important;
 	font-size: 14px;
 	font-weight: 400;
-	font-style: italic;
+/*	font-style: italic;*/
 	color: #666;
 }
 .recKeyword>ul>li{
@@ -172,12 +172,21 @@
 	font-weight: 500;
 	color: #fff;
 }
-.tabBox>ul>li:first-child{
+
+/*.tabBox>ul>li:first-child{
 	background-color: #00adb5;
 }
 .tabBox>ul>li:first-child>a{
 	font-weight: 500;
 	color: #fff;
+}*/
+
+.tabOn{
+	background-color: #00adb5;
+}
+.tabOnTxt{
+	color: #fff !important;
+	font-weight: 500 !important;
 }
 .tabBox>ul>li:last-child{
 	margin-right: 0 !important;
@@ -202,10 +211,15 @@
 	padding: 15px 0 15px 0;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
+.selBox>ul:first-child{
+	margin-top: 33px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
 .firstChk{
 	width: 150px;
 	padding: 5px 0 5px 0;
 	font-weight: 500;
+	font-size: 16px;
 }
 .sangseChk{
 	position: relative;
@@ -214,66 +228,108 @@
 }
 .sangseChk>li{
 	width: 14%;
-	padding: 5px 0 5px 0;
+	padding: 7px 0 7px 0;
+	font-size: 16px;
+	font-weight: 300;
 }
 .selChkBox{
 	position: relative;
 	width: 100%;
-	padding: 0 50px 20px 50px;
+	min-height: 100px;
+	padding: 40px 0 40px 0;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	display: none; /* 더보기 클릭시 풀기 */
 }
 .selChkBox>div:first-child{
-	width: 850px;
+	max-width: 1180px;
+	/*display: none;*/
 	/*border: 1px solid red;*/
 }
 .selChkBox>div:first-child>ul>li{
 	padding: 2px 2px 2px 5px;
 	margin: 2px 5px;
-	border: 1px solid #ffcc00;
-	border-radius: 2px;
+	border: 2px solid #00adb5;
+	border-radius: 4px;
 }
 .selChkBox>div:first-child>ul>li>a{
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 24px;
+	color: #999;
 }
 .selChkBox>div:first-child>ul>li>a::after{
-	content: "X";
+	content: "×";
 	display: block;
 	position: static;
 	float: right;
 	top: 0;
 	right: 0;	
 	width: 20px;
-	height: 20px;
-	line-height: 26px;
+	height: 22px;
+	font-size: 20px;
+	line-height: 20px;
 	padding-left: 10px;
+	color: #999;
 }
-#botSearchBtn{
+.plusbtn{
 	position: absolute;
-	top: 0;
-	right: 0;
-	margin-right: 140px;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #00adb5;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
 	font-size: 18px;
-	font-weight: 400;
-	width: 140px;
-	height: 72px;
-	color: #f9f9f9;
-	border: none;
-	background-color: #2c2c2c;
+	font-weight: 500;
 }
 .sangseView{
 	position: absolute;
-	bottom: -8%;
+	bottom: -15px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 120px;
-	height: 50px;
+	height: 30px;
 	border-radius: 4px;
 	color: #fff;
 	font-size: 16px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 30px;
 	background-color: #00adb5;
 	box-shadow: 0px 2px 6px #aaa;
+}
+.btnBox{
+	position: relative;
+	min-height: 100px;
+}
+.btnBox>div{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 30px 0 50px 0;
+}
+#botSearchBtn{
+	font-size: 18px;
+	font-weight: 400;
+	width: 140px;
+	height: 72px;
+	color: #fff;
+	border: none;
+	background-color: #00adb5;
+}
+.searchResetBtn{
+	float: left;
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	width: 140px;
+	height: 72px;
+	color: #00adb5;
+	border: 2px solid #00adb5;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 72px;
+	margin-right: 20px;
 }
