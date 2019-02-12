@@ -1,7 +1,9 @@
 <!doctype html>
 
 <script src="js/search.js"></script>
+<script src="js/jquery.prettydropdowns.js"></script>
 <link rel="stylesheet" type="text/css" href="css/search.css">
+<link rel="stylesheet" type="text/css" href="css/prettydropdowns.css">
 
 <!-- SEARCH -->
 <section id="search">
@@ -64,209 +66,276 @@
         <input type="submit" value="검색하기" id="topSearchBtn">
         <div class="tabBox">
             <ul>
-                <li><a href="#">물건종류</a></li>
-                <li><a href="#">소재</a></li>
-                <li><a href="#">가격 / 면적</a></li>
-                <li><a href="#">사건현황</a></li>
-                <li><a href="#">특수권리 / 물건</a></li>
+                <li class="mulgun"><a href="#">물건종류</a></li>
+                <li class="sojae"><a href="#">소재지</a></li>
+                <li class="price"><a href="#">가격 / 면적</a></li>
+                <li class="sagun"><a href="#">사건현황</a></li>
+                <li class="special"><a href="#">특수권리 / 물건</a></li>
             </ul>
         </div>
-        <!-- selectBox -->
-        <div class="selBox">
-            <ul class="jugeo">
-                <li class="firstChk">
-                    <input type="checkbox" name="jugeo" value="jugeo" id="jugeo">
-                    <label for="jugeo">주거시설</label>
-                </li>
-                <li class="sangseChkBox">
-                    <ul class="sangseChk">
-                        <li>
-                            <input type="checkbox" name="jugeo" value="jugeo">
+        <!-- mulgunBox -->
+        <div class="mulgunBox">
+            <div class="selBox">
+                <ul class="jugeo">
+                    <li class="firstChk">
+                        <input type="checkbox" name="jugeo" value="jugeo" id="jugeo">
+                        <label for="jugeo">주거시설</label>
+                    </li>
+                    <li class="sangseChkBox">
+                        <ul class="sangseChk">
+                            <li>
+                                <input type="checkbox" name="jugeo" value="jugeo">
                             아파트</li>
-                        <li>
-                            <input type="checkbox" name="jugeo" value="jugeo">
+                            <li>
+                                <input type="checkbox" name="jugeo" value="jugeo">
                             단독주택</li>
-                        <li>
-                            <input type="checkbox" name="jugeo" value="jugeo">
+                            <li>
+                                <input type="checkbox" name="jugeo" value="jugeo">
                             다가구(원룸)</li>
-                        <li>
-                            <input type="checkbox" name="jugeo" value="jugeo">
+                            <li>
+                                <input type="checkbox" name="jugeo" value="jugeo">
                             다세대(빌라)</li>
-                        <li>
-                            <input type="checkbox" name="jugeo" value="jugeo">
+                            <li>
+                                <input type="checkbox" name="jugeo" value="jugeo">
                             근린주택</li>
-                        <li>
-                            <input type="checkbox" name="jugeo" value="jugeo">
+                            <li>
+                                <input type="checkbox" name="jugeo" value="jugeo">
                             오피스텔(주거용)</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="sangup">
-                <li class="firstChk">
-                    <input type="checkbox" name="sangup" value="sangup">
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sangup">
+                    <li class="firstChk">
+                        <input type="checkbox" name="sangup" value="sangup">
                     상업 / 사무실</li>
-                <li class="sangseChkBox">
-                    <ul class="sangseChk">
-                        <li>
-                            <input type="checkbox" name="sangup" value="sangup">
+                    <li class="sangseChkBox">
+                        <ul class="sangseChk">
+                            <li>
+                                <input type="checkbox" name="sangup" value="sangup">
                             근린상가</li>
-                        <li>
-                            <input type="checkbox" name="sangup" value="sangup">
+                            <li>
+                                <input type="checkbox" name="sangup" value="sangup">
                             근린시설</li>
-                        <li>
-                            <input type="checkbox" name="sangup" value="sangup">
+                            <li>
+                                <input type="checkbox" name="sangup" value="sangup">
                             오피스텔</li>
-                        <li>
-                            <input type="checkbox" name="sangup" value="sangup">
+                            <li>
+                                <input type="checkbox" name="sangup" value="sangup">
                             사무실</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="gongjang">
-                <li class="firstChk">
-                    <input type="checkbox" name="gongjang" value="gongjang">
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="gongjang">
+                    <li class="firstChk">
+                        <input type="checkbox" name="gongjang" value="gongjang">
                     공장 / 창고</li>
-                <li class="sangseChkBox">
-                    <ul class="sangseChk">
-                        <li>
-                            <input type="checkbox" name="gongjang" value="gongjang">
+                    <li class="sangseChkBox">
+                        <ul class="sangseChk">
+                            <li>
+                                <input type="checkbox" name="gongjang" value="gongjang">
                             공장</li>
-                        <li>
-                            <input type="checkbox" name="gongjang" value="gongjang">
+                            <li>
+                                <input type="checkbox" name="gongjang" value="gongjang">
                             아파트형 공장</li>
-                        <li>
-                            <input type="checkbox" name="gongjang" value="gongjang">
+                            <li>
+                                <input type="checkbox" name="gongjang" value="gongjang">
                             창고</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="toji">
-                <li class="firstChk">
-                    <input type="checkbox" name="toji" value="toji">
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="toji">
+                    <li class="firstChk">
+                        <input type="checkbox" name="toji" value="toji">
                     토지</li>
-                <li class="sangseChkBox">
-                    <ul class="sangseChk">
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                    <li class="sangseChkBox">
+                        <ul class="sangseChk">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             대지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             전</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             답</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             임야</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             과수원</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             잡종지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             도로</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             묘지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             목장용지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             공장용지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             학교용지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             창고용지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             체육용지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             종교용지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             구거</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             하천</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             유지</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             제방</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             주차장</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             염전</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             양어장</li>
-                    </ul>
-                </li>
-            </ul>
-			<ul class="etc">
-                <li class="firstChk">
-                    <input type="checkbox" name="etc" value="etc" id="etc">
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="etc">
+                    <li class="firstChk">
+                        <input type="checkbox" name="etc" value="etc" id="etc">
                     기타 </li>
-                <li class="sangseChkBox">
-                    <ul class="sangseChk">
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                    <li class="sangseChkBox">
+                        <ul class="sangseChk">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             콘도</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             골프장</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             스키장</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             레저시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             목욕탕</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             교육시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             농가시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             의료시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             주유소</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             노유자시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             분뇨시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             자동차시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             장례시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             문화,집회시설</li>
-                        <li>
-                            <input type="checkbox" name="toji" value="toji">
+                            <li>
+                                <input type="checkbox" name="toji" value="toji">
                             기타 부동산</li>
-                    </ul>
-                </li>
-                <a href="#" class="plusbtn">＋</a>
-            </ul>
+                        </ul>
+                    </li>
+                    <a href="#" class="plusbtn">＋</a>
+                </ul>
+            </div>
+        </div>
+        <!-- sojaeBox -->
+        <div class="sojaeBox">
+            <div class="selBox">
+                <ul class="sojaeji">
+                    <li class="firstChk col-2">
+                        물건 소재지
+                    </li>
+                    <li class="sojaejiCont">
+                        <ul class="sojaejiBtnBox">
+                            <li><a href="#" class="jibunBtn">지번</a></li>
+                            <li><a href="#" class="doroBtn">도로명</a></li>
+                            <li><a href="#" class="bubwonBtn">법원</a></li>
+                        </ul>
+                        <ul class="sojaejiSelBox">
+                            <li>
+                                <select>
+                                    <option value="sido">시 / 도</option>
+                                    <option value="seoul">서울</option>
+                                    <option value="gyeonggi">경기도</option>
+                                    <option value="busan">부산광역시</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select>
+                                    <option value="gugun">구 / 군</option>
+                                    <option value="guro">구로구</option>
+                                    <option value="geumcheon">금천구</option>
+                                    <option value="gangnam">강남구</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="text" name="eubmyundong" placeholder="읍 / 면 / 동">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="subway">
+                    <li class="firstChk col-2">
+                        역세권
+                    </li>
+                    <li class="subwayCont">
+                        <ul class="subwayBtnBox">
+                            <li><a href="#" class="subway_sudoBtn">수도권</a></li>
+                            <li><a href="#" class="subway_busanBtn">부산</a></li>
+                            <li><a href="#" class="subway_gwangjuBtn">광주</a></li>
+                            <li><a href="#" class="subway_daeguBtn">대구</a></li>
+                            <li><a href="#" class="subway_daejeonBtn">대전</a></li>
+                        </ul>
+                        <ul class="subwayMap">
+                            <li><img src="images/subway.png" alt="노선도"></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="priceBox">
+
+        </div>
+        <div class="sagunBox">
+
+        </div>
+        <div class="specialBox">
+
         </div>
         <div class="selChkBox">
             <div>
@@ -285,9 +354,10 @@
         </div>
         <div class="btnBox">
             <div>
-            <a href="#" class="searchResetBtn">조건 초기화</a>
-            <input type="submit" value="검색하기" id="botSearchBtn">
+                <a href="#" class="searchResetBtn">조건 초기화</a>
+                <input type="submit" value="검색하기" id="botSearchBtn">
             </div>
         </div>
     </div>
-    <a href="#" class="sangseView">상세보기</a> </section>
+    <a href="#" class="sangseView">상세보기</a>
+</section>

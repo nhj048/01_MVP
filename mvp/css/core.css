@@ -6,7 +6,8 @@
 
 *{
 	box-sizing: border-box;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: Noto Sans KR;
+	/*font-size: 14px;*/
 }
 html{
 	font-size: 14px;
@@ -39,10 +40,10 @@ li{/*옆으로 흐르게*/
 li,dl{
 	float: left;/*옆으로 흐르게*/
 }
-select,input{
-	border-radius: 5px;
+input{
+	color: #999;
+	padding-left: 0.8em !important;
 }
-
 
 /*
 input[type="checkbox"]{
