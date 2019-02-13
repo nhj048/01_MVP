@@ -40,7 +40,7 @@ li{/*옆으로 흐르게*/
 li,dl{
 	float: left;/*옆으로 흐르게*/
 }
-input{
+input[type="text"]{
 	color: #999;
 	padding-left: 0.8em !important;
 }

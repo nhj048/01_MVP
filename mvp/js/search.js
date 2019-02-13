@@ -1,7 +1,6 @@
 $(function(){ //////////////////// jQB ////////////////////
 	
 	$('select').prettyDropdown({
-
 		// The default behavior is to move the selected item to the top. 
 		// If you want the order of items to remain static, then set this to true.
 		classic: false,
@@ -10,7 +9,7 @@ $(function(){ //////////////////// jQB ////////////////////
 		customClass: 'arrow',
 
 		// Width
-		width: null,
+		width: 140,
 
 		// Item height in pixels.
 		height: 32,
@@ -37,11 +36,58 @@ $(function(){ //////////////////// jQB ////////////////////
 	
 	$(".sangseView").click(function(e){
 		e.preventDefault();
-		$(".mulgunBox, .selChkBox, .sangseChk, .btnBox").fadeToggle(100);
-		$(".tabBox>ul>li").first().addClass("tabOn");
-		$(".tabBox>ul>li:first-child>a").addClass("tabOnTxt");
+		$("#searchContBox>div, .btnBox").fadeToggle(100);
+		$("#searchContBox>div").eq(idx).fadeToggle(100);
 	});// click //
 	
-	
+	// 검색박스 메뉴 탭 클릭시 글자 변경
+	$(".tabBox>ul>li").click(function(e){
+		e.preventDefault();
+		$(this).addClass('on').siblings().removeClass('on');
+		
+		// 탭 메뉴의 순번과 같은 컨텐츠 순번에 클래스 부여해서 보이게 하기
+		var idx = $(this).index();
+		$("#searchContBox>div").eq(idx).addClass('on').siblings().removeClass('on');
+	});// click //
+
+
+	// 물건소재지 메뉴 탭 클릭시 글자 변경
+	$(".sojaejiBtnBox>li").click(function(e){
+		e.preventDefault();
+		$(this).addClass('on').siblings().removeClass('on');
+
+		// 탭 메뉴의 순번과 같은 컨텐츠 순번에 클래스 부여해서 보이게 하기
+		var idx = $(this).index();
+		$("#sojaejiContBox>ul").eq(idx).addClass('on').siblings().removeClass('on');
+	});// click //
+
+
 	
 }); //////////////////// jQB ////////////////////
+
+
+/*////////////////////////////////////////////////////////////////////////////
+	함수명 : chgTab
+	기능 : searchBox의 각 메뉴를 클릭하면 순번에 있는 컨텐츠가 보이도록 class 변경
+*/////////////////////////////////////////////////////////////////////////////
+function chgTab(){
+	// alert("탭메뉴"+seq);
+
+	// 대상선정 : .tabBox>ul>li , #searchContBox>div
+	var tabTg = $(".tabBox>ul>li");
+	var tabTg2 = $("#searchContBox>div");
+	var tgLength = tabTg2.length;
+	var index = tabTg2.index(this);
+
+	console.log("tabTg의 length값: "+tgLength);
+	console.log("tabTg2의 몇 번째 값?: "+index);
+
+	// // 변경내용 : 탭 메뉴와 내용을 초기화하고, 선택된 순번의 컨텐츠만 클래스 부여해서 보이게 하기
+	// for(var i=0;i<tabTg.length;i++){
+	// 	tabTg.eq(i).removeClass("");
+	// 	tabTg2.eq(i).removeClass("");
+	// } // for문 //
+
+	// tabTg.eq(tgLength).addClass('on').siblings().removeClass('on');
+	tabTg2.eq(tgLength).addClass('on').siblings().removeClass('on');
+}///////////// chgTab 함수 ///////////////
