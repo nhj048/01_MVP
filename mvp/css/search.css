@@ -365,11 +365,12 @@
 }
 .priceinBox{
 	margin-top: 33px;
-	height: 82px;
+	min-height: 82px;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
-.gamjeongga, .minPrice{
+.priceinBox>ul{
+	position: relative;
 	margin-top: 0 !important;
 	border: none !important;
 	padding: 23px 0 23px 0;
@@ -379,6 +380,86 @@
 	font-weight: 500;
 	line-height: 30px;
 	margin: 0 19px 0 19px;
+}
+.area{
+	min-height: 150px;
+	margin-top: 0;
+	border-top: none;
+}
+.area-field{
+	float: left;
+	width: 476px;
+}
+.area-field>li:nth-child(3),.area-field>li:nth-child(4){
+	float: right;
+}
+.area-updown,.area-resetBtn{
+	color: #999;
+}
+.area-updown{
+	padding-right: 15px;
+}
+.area-updown::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 18px;
+	top: 25px;
+	right: 94px;
+	background-color: #eee;
+}
+.area-resetBtn{
+	padding-left: 20px;
+	margin-left: 15px;
+	background-position: -462px -15px;
+}
+.arc-field{
+	float: right;
+}
+.field-slider{
+	float: left;
+	padding-top: 0px !important;
+}
+.fs-right{
+	float: right;
+}
+.sliderBox{
+	width: 320px;
+}
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus, 
+.ui-widget-header .ui-state-focus,
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-widget-header .ui-state-hover,
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
+  background: #4d4d4d;
+  border-color: transparent;
+}
+.ui-slider .ui-slider-pip-initial-1 .ui-slider-label {
+  color: #000; }
+                    
+.ui-slider .ui-slider-pip-initial-2 .ui-slider-label {
+  color: #000; }
+.special-allChk{
+	padding: 10px 0 10px 0 !important;
+	border-bottom: none !important;
+}
+.special-selChk{
+	border-top: 1px solid #eee;
+	padding: 10px 0 10px 0 !important;
+}
+.specialChk{
+	/*border-top: 1px solid #eee;*/
+}
+.specialChk li{
+	width: 20%;
+}
+.special-selChk>.sangseChkBox{
+	/*border-top: 1px solid #eee;*/
 }
 .sangseView{
 	position: absolute;

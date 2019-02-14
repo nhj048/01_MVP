@@ -2,8 +2,14 @@
 
 <script src="js/search.js"></script>
 <script src="js/jquery.prettydropdowns.js"></script>
+<script src="js/jquery-ui-slider-pips.js"></script>
+
 <link rel="stylesheet" type="text/css" href="css/search.css">
 <link rel="stylesheet" type="text/css" href="css/prettydropdowns.css">
+<link rel="stylesheet" type="text/css" href="css/toggle-switch.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-slider-pips.css">
+
+
 
 <!-- SEARCH -->
 <section id="search">
@@ -491,37 +497,174 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="priceinBox area">
+                        <ul class="area-field">
+                            <li class="firstChk col-2">대지면적</li>
+                            <li>
+                                <label class="switch-light switch-candy" onclick="">
+                                    <input type="checkbox">
+                                    <span>
+                                        <span>㎡</span>
+                                        <span>평</span>
+                                        <a></a>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="area-resetBtn">조건 초기화</li>
+                            <li class="area-updown">단위 ↓</li>
+                        </ul>
+                        <ul class="area-field arc-field">
+                            <li class="firstChk col-2">건물면적</li>
+                            <li>
+                                <label class="switch-light switch-candy" onclick="">
+                                    <input type="checkbox">
+                                    <span>
+                                        <span>㎡</span>
+                                        <span>평</span>
+                                        <a></a>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="area-resetBtn">조건 초기화</li>
+                            <li class="area-updown">단위 ↓</li>
+                        </ul>
+                        <ul class="field-slider">
+                            <li class="col-2 firstChk"></li>
+                            <li class="sliderBox">
+                                <!-- Slider -->
+                                <div class="pips-slider"></div>
+                            </li>
+                        </ul>
+                        <ul class="field-slider fs-right">
+                            <li class="col-2 firstChk"></li>
+                            <li class="sliderBox">
+                                <!-- Slider -->
+                                <div class="pips-slider"></div>
+                            </li>
+                        </ul>
+                        <ul class="field-slider">
+                            <li class="col-2 firstChk"></li>
+                            <li class="sliderBox">
+                                <!-- Slider -->
+                                <div class="pips-slider"></div>
+                            </li>
+                        </ul>
+                        <ul class="field-slider fs-right">
+                            <li class="col-2 firstChk"></li>
+                            <li class="sliderBox">
+                                <!-- Slider -->
+                                <div class="pips-slider"></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="sagunBox">
 
             </div>
             <div class="specialBox">
+                <div class="selBox">
+                    <ul class="special-allChk">
+                        <li class="firstChk">
+                            <!-- <input type="checkbox" name="jugeo" value="jugeo" id="jugeo">
+                                <label for="jugeo">주거시설</label> -->
+                            </li>
+                            <li class="sangseChkBox">
+                                <ul class="sangseChk specialChk">
+                                    <li>
+                                        <input type="checkbox" name="jugeo" value="jugeo">
+                                        <span>전체선택</span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="jugeo" value="jugeo">
+                                        <span>체크항목 제외</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="special-selChk">
+                            <li class="firstChk">특수권리 / 물건</li>
+                            <li class="sangseChkBox">
+                                <ul class="sangseChk specialChk">
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    대항력 있는 임차인</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    전세권설정 / 임차권등기</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    임차인 없는 물건</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    유치권</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    법정지상권</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    분묘기지권</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    가처분</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    가등기</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    대지권 미등기</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    토지별도등기</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    예고 등기</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    지분매각</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    건물만 매각</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    토지만 매각</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    형식적 경매</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    재매각</li>
+                                    <li>
+                                        <input type="checkbox" name="sangup" value="sangup">
+                                    병합 / 중복사건</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div
+                </div>
+            </div>
 
+            <div class="selChkBox">
+                <div>
+                    <ul>
+                        <li><a href="#">주거시설 전체</a></li>
+                        <li><a href="#">가격 ~2억 이하</a></li>
+                        <li><a href="#">서울지역</a></li>
+                        <li><a href="#">현황 진행 중</a></li>
+                        <li><a href="#">유치권</a></li>
+                        <li><a href="#">토지 주차장</a></li>
+                        <li><a href="#">유찰2회 이상</a></li>
+                        <li><a href="#">경기 광명시</a></li>
+                        <li><a href="#">대항력 있는 임차인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btnBox">
+                <div>
+                    <a href="#" class="searchResetBtn">조건 초기화</a>
+                    <input type="submit" value="검색하기" id="botSearchBtn">
+                </div>
             </div>
         </div>
-        
-        <div class="selChkBox">
-            <div>
-                <ul>
-                    <li><a href="#">주거시설 전체</a></li>
-                    <li><a href="#">가격 ~2억 이하</a></li>
-                    <li><a href="#">서울지역</a></li>
-                    <li><a href="#">현황 진행 중</a></li>
-                    <li><a href="#">유치권</a></li>
-                    <li><a href="#">토지 주차장</a></li>
-                    <li><a href="#">유찰2회 이상</a></li>
-                    <li><a href="#">경기 광명시</a></li>
-                    <li><a href="#">대항력 있는 임차인</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="btnBox">
-            <div>
-                <a href="#" class="searchResetBtn">조건 초기화</a>
-                <input type="submit" value="검색하기" id="botSearchBtn">
-            </div>
-        </div>
-    </div>
-    <a href="#" class="sangseView">상세보기</a>
-</section>
+        <a href="#" class="sangseView">상세보기</a>
+    </section>

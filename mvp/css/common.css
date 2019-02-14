@@ -17,7 +17,7 @@
 /* TOP */
 #TOP{
 	height: 40px;
-	background-color: #222831;
+	background-color: #4d4d4d;
 }
 #topmenu{
 	position: relative;
@@ -177,10 +177,9 @@
 /* FOOTERMENU */
 #FOOTERMENU{
 	height: 50px;
-	background-color: #2c2c2c;
+	background-color: #4d4d4d;
 	color: #999;
 	font-size: 14px;
-	border-top: 1px solid #ffcc00;
 }
 .fmBox{
 	position: relative;
@@ -199,7 +198,7 @@
 /* FOOTER */
 #FOOTER{
 	height: 120px;
-	background-color: #2c2c2c;
+	background-color: #4d4d4d;
 	font-size: 14px;
 	color: #999;
 }
@@ -215,6 +214,6 @@
 
 #gnbbox>li:nth-child(1)>a::before, #gnbbox>li:nth-child(2)>a::before,
 #gnbbox>li:nth-child(3)>a::before, #gnbbox>li:nth-child(4)>a::before,
-.arrow, #adSearch::after, #recentView::after, #intView::after,.bullet>li,.listSet,.listView,.cardView{
+.arrow, #adSearch::after, #recentView::after, #intView::after,.bullet>li,.listSet,.listView,.cardView,.area-resetBtn{
 	background: url(../images/icon.png) no-repeat;
 }

@@ -1,5 +1,6 @@
 $(function(){ //////////////////// jQB ////////////////////
 	
+	// Select Box Plug-in
 	$('select').prettyDropdown({
 		// The default behavior is to move the selected item to the top. 
 		// If you want the order of items to remain static, then set this to true.
@@ -29,17 +30,51 @@ $(function(){ //////////////////// jQB ////////////////////
 
 		// Callback
 		afterLoad: function(){}
-
 	});
 
-	var sViewsts = 0;
-	
-	$(".sangseView").click(function(e){
-		e.preventDefault();
-		$("#searchContBox>div, .btnBox").fadeToggle(100);
-		$("#searchContBox>div").eq(idx).fadeToggle(100);
+$(function() {
+    
+    $(".pips-slider")
+    
+        .slider({
+            range: true,
+            min: 0,
+            max: 1000,
+            values: [ 0, 1000 ],
+        	step: 100
+        
+        })
+    
+        .slider("pips", {
+        	first: "label",
+        	last: "label",
+            rest: "pip",
+        	step: 1,
+        	labels: false,
+        	prefix: "",
+        	suffix: ""
+        
+        })
+    	.slider("float", {
+        	
+        	handle: true,
+        	pips: false,
+        	labels: false,
+        	prefix: "",
+        	suffix: ""
+        
+    	});
+
+});
+
+var sViewsts = 0;
+
+$(".sangseView").click(function(e){
+	e.preventDefault();
+	$("#searchContBox>div, .btnBox").fadeToggle(100);
+	$("#searchContBox>div").eq(idx).fadeToggle(100);
 	});// click //
-	
+
 	// 검색박스 메뉴 탭 클릭시 글자 변경
 	$(".tabBox>ul>li").click(function(e){
 		e.preventDefault();
