@@ -1,5 +1,23 @@
+// 파라미터값
+var param = location.href;
+console.log("url"+param);
+
+var loc = location.href;
+console.log("loc"+loc);
+
 $(function(){ //////////////////// jQB ////////////////////
-	
+
+	// list 페이지로 이동했을 때 물건종류 보이게 하기
+	if(param == 'http://localhost:8080/www/mvp/list.html'){
+		$(".mulgun").addClass('on');
+		$(".mulgunBox").addClass('on');
+	}
+
+	// 검색하기 버튼
+	$("#topSearchBtn").css({cursor:"pointer"});
+
+	$(".input-PM").WanSpinner().css("border-color", "#2C3E50");
+
 	// Select Box Plug-in
 	$('select').prettyDropdown({
 		// The default behavior is to move the selected item to the top. 
