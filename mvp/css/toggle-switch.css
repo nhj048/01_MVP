@@ -235,7 +235,7 @@
   .switch-toggle.switch-candy,
   .switch-light.switch-candy > span {
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #999;
     width: 100px;
     height: 20px;
   }

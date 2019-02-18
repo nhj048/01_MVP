@@ -293,7 +293,7 @@
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background-color: #00adb5;
+	background-image: linear-gradient(to bottom, #242424 0%, #303030 100%);
 	line-height: 30px;
 	text-align: center;
 	color: #fff;

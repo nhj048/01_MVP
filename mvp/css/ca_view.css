@@ -1,0 +1,370 @@
+@charset "utf-8";
+@import url(core.css);
+@import url(common.css);
+@import url(GDbg.css);
+@import url(GDset.css);
+
+.ca-inbox{
+	position: relative;
+	width: 1150px;
+	max-width: 1150px;
+	height: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+.big{
+	font-size: 24px;
+	line-height: 25px;
+	font-weight: 500;
+}
+.ca-main-tit{
+	font-size: 16px;
+	font-weight: 500;
+	float: left;
+	padding-left: 20px;
+	line-height: 46px;
+}
+.ca-main-txt{
+	position: absolute;
+	font-size: 16px;
+	right: 0;
+	padding-right: 20px;
+	line-height: 46px;
+}
+.point{
+	font-weight: 500;
+}
+.two{
+	line-height: 23px;
+}
+.blur{
+	float: right;
+	font-size: 14px;
+	font-weight: 400;
+	color: #999;
+	line-height: 23px;
+}
+.blurtxt{
+	color: #999;
+}
+/* 헤더 */
+#ca-header{
+	height: 50px;
+	padding-top: 12px;
+}
+.ca-header-left{
+	float: left;
+}
+.recent-view{
+	font-size: 16px;
+	line-height: 25px;
+	color: #222831;
+}
+.ca-header-center{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.ca-header-logo{
+	height: 25px;
+}
+.ca-header-right{
+	float: right;
+}
+.ca-header-right li{
+	text-align: center;
+	width: 80px;
+	background-image: linear-gradient(to bottom, #242424 0%, #303030 100%);
+	margin-right: 10px;
+}
+.ca-header-right a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 25px;
+	color: #fff;
+}
+.ca-header-right>ul>li:last-child{
+	margin-right: 50px;
+}
+.ca-close{
+	position: absolute;
+	top: -2px;
+	right: 0;
+	font-size: 36px;
+	line-height: 25px;
+}
+
+/* 탑 */
+#ca-top{
+	height: 100px;
+}
+.ca-top-left{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ca-top-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.ca-top-right{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	text-align: right;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+/* 메인 */
+#ca-main{
+	height: 440px;
+	min-height: 440px;
+	padding-top: 18px;
+}
+.ca-main-left{
+	float: left;
+	width: 400px;
+	height: 404px;
+}
+.main-img{
+	width: 400px;
+	height: 290px;
+	background: url(../images/01_00.png) no-repeat;
+	margin-bottom: 24px;
+}
+.sa-img{
+	width: 125px;
+	height: 91px;
+	margin-right: 12px;
+}
+.ca-main-left>ul>li:last-child{
+	margin-right: 0 !important;
+}
+.ca-main-left>ul>li:nth-child(2){
+	background: url(../images/01_01.png) no-repeat;
+}
+.ca-main-left>ul>li:nth-child(3){
+	background: url(../images/01_02.png) no-repeat;
+}
+.ca-main-left>ul>li:nth-child(4){
+	background: url(../images/01_03.png) no-repeat;
+}
+/* 메인 우측 */
+.ca-main-right{
+	float: right;
+	width: 710px;
+}
+.ca-main-full{
+	width: 100%;
+}
+.ca-main-half{
+	width: 50%;
+}
+.ca-main-right li{
+	position: relative;
+	border: 1px solid #eee;
+	padding: 6px 0 6px 0;
+}
+.ca-main-1st>li:nth-child(1){
+	border-bottom: none !important;
+}
+.ca-main-1st>li:nth-child(2){
+	border-right: none !important;
+}
+.ca-main-1st{
+	margin-bottom: 15px;
+}
+.ca-main-2nd{
+	margin-bottom: 15px;
+}
+.ca-main-2nd>li:nth-child(2),.ca-main-2nd>li:nth-child(4){
+	border-left: none;
+}
+.ca-main-2nd>li:nth-child(1),.ca-main-2nd>li:nth-child(2){
+	border-bottom: none;
+}
+.ca-main-3rd{
+	margin-bottom: 15px;
+}
+.ca-main-3rd>li:nth-child(2)>span:nth-child(2){
+	font-size: 14px;
+	color: #999;
+}
+.ca-main-3rd>li:nth-child(2)>span:nth-child(2){
+	right: 120px;
+}
+.ca-main-3rd>li:nth-child(2)>span:nth-child(3){
+	color: #222831 !important;
+	font-size: 14px;
+}
+.ca-main-3rd>li:nth-child(2)>span:nth-child(3)>span.blur{
+	color: #222831 !important;
+	font-size: 14px;
+}
+.ca-main-4th{
+	margin-bottom: 15px;
+}
+#ca-revenue{
+	height: 109px;
+}
+#ca-revenue .ca-big-tit{
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	line-height: 109px;
+}
+.ca-big-tit{
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+}
+#ca-revenue .ca-big-tit::before, #ca-origin-document .ca-big-tit::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 54px;
+	left: 0;
+	width: 15px;
+	height: 6px;
+	background-color: #00adb5;
+}
+.revenue-num{
+	font-size: 28px;
+	font-weight: 600;
+	color: #fc5185;
+	padding-left: 50px;
+}
+.ca-cautionBox{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ca-caution{
+	position: relative;
+	width: 70px;
+	height: 60px;
+	background-color: #ccc;
+	margin-left: 20px;
+	border-radius: 4px;
+	text-align: center;
+}
+.ca-caution>span{
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	line-height: 60px;
+}
+#ca-origin-document{
+	height: 109px;
+	margin-bottom: 18px;
+}
+#ca-origin-document .ca-big-tit{
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	line-height: 109px;
+}
+.ca-origin-documentBox{
+	position: absolute;
+	width: 796px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ca-document-link{
+	position: relative;
+	width: 140px;
+	height: 30px;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 24px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+.ca-origin-documentBox>li:nth-child(1),.ca-origin-documentBox>li:nth-child(6){
+	margin-left: 0 !important;
+}
+.ca-origin-documentBox>li:nth-child(n+6){
+	margin-top: 11px;
+}
+#ca-tab{
+	height: 40px;
+}
+#ca-tab>.ca-inbox{
+	border-bottom: none;
+}
+.ca-tabBox>li{
+	width: 25%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	background-color: #fff;
+	color: #222831;
+	border: 1px solid #eee;
+	cursor: pointer;
+}
+.ca-tabBox>li:not(:last-child){
+	border-right: none;
+}
+.ca-tabBox>li.on{
+	background-color: #4d4d4d;
+	color: #fff;
+	font-weight: 500;
+}
+.ca-tabBox>li:hover{
+	background-color: #4d4d4d;
+	color: #fff;
+}
+#ca-tab-cont{
+	min-height: 1000px;
+	padding: 24px 0 24px 0;
+}
+.ca-tab-cont-sojaeji{
+	font-size: 16px;
+	margin-left: 90px;
+}
+.ca-tab-cont-sojaejiBox{
+	position: relative;
+}
+.ca-big-tit::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 15px;
+	height: 6px;
+	background-color: #00adb5;
+}
+.marginBox{
+	margin-top: 24px;
+}
+.ca-tab-cont-danjiBox{
+	position: relative;
+}
+.ca-tab-cont-danji{
+	width: 100%;
+}
+.ca-tab-cont-danji>li{
+	position: relative;
+	width: 28%;
+	border: 1px solid #eee;
+}
+.ca-tab-cont-danji>li:nth-child(1){
+	width: 16%;
+	height: 144px;
+	border-right: none;
+}
+.ca-danji-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

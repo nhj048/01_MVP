@@ -47,6 +47,9 @@ input[type="text"]{
 label{
 	font-size: 16px;
 }
+section{
+	position: relative;
+}
 /*
 input[type="checkbox"]{
 	position: absolute;
