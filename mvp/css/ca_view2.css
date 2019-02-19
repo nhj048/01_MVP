@@ -4,14 +4,28 @@
 @import url(GDbg.css);
 @import url(GDset.css);
 
+table{
+	/*border: 1px solid #eee;*/
+	border-collapse: collapse;
+}
+tr{
+	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+th{
+	padding: 10px 0 10px 20px;
+	text-align: left;
+	border-left: 1px solid #eee;
+}
+td{
+	padding: 6px 0 6px 0;
+	border-right: 1px solid #eee;
+}
+tbody>tr:last-child{
+	border-bottom: 1px solid #eee;
+}
 .ca-pos-box{
 	position: relative;
-}
-.ca-full-box{
-	width: 100%;
-}
-.ca-full-box>li{
-	border: 1px solid #eee;
 }
 .ca-inbox{
 	position: relative;
@@ -22,81 +36,14 @@
 	box-sizing: border-box;
 	border-bottom: 1px solid #eee;
 }
-.marginBox{
-	margin-top: 24px;
-}
-.big{
-	font-size: 24px;
-	line-height: 25px;
-	font-weight: 500;
-}
-.ca-main-tit{
-	font-size: 16px;
-	font-weight: 500;
-	float: left;
-	padding-left: 20px;
-	/*line-height: 46px;*/
-}
-.ca-main-txt{
-	position: absolute;
-	font-size: 16px;
-	right: 0;
-	padding-right: 20px;
-	line-height: 46px;
-}
-.ca-cont-txt{
-	position: absolute;
-	text-align: right;
-	font-size: 14px;
-	top: 50%;
-	width: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	padding-right: 20px;
-	/*line-height: 46px;*/
-}
-.ca-cont-center-txt{
-	line-height: 46px;
-	font-size: 14px;
-}
-.point{
-	font-weight: 500;
-}
-.two{
-	line-height: 23px;
-	/*text-align: right;*/
-}
-.twoleft{
-	text-align: left;
-	line-height: 23px;
-}
-.ca-max-width{
-	max-width: 940px;
-}
-.blur{
-	float: right;
-	font-size: 14px;
-	font-weight: 400;
-	color: #999;
-	line-height: 23px;
-}
-.blurtxt{
-	color: #999;
-}
-.autoH>li{
-	padding: 6px 0 6px 0;
-}
 .ca-full{
 	position: relative;
 	width: 100%;
 }
-.ca-half{
-	position: relative;
-	width: 50%;
-}
-.ca-third{
-	position: relative;
-	width: 33.3%;
+.ca-big-tit{
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
 }
 .ca-big-tit::before{
 	content: "";
@@ -107,6 +54,41 @@
 	width: 15px;
 	height: 6px;
 	background-color: #00adb5;
+}
+.ca-main-right2{
+	width: 710px;
+	float: right;
+}
+.ca-main-tit2{
+	font-size: 16px;
+	font-weight: 500;
+	text-align: left;
+	padding-left: 20px;
+}
+.ca-main-txt2{
+    font-size: 14px;
+    text-align: right;
+    padding-right: 20px;
+}
+.ca-main-small{
+	font-size: 12px;
+	padding: 0 0 0 20px;
+}
+.color999{
+	color: #999;
+}
+.point{
+	font-weight: 500;
+}
+tr.space {
+  border-top: 1px solid #eee !important;
+  border: none;
+}
+tr.space>td{
+	padding: 8px 0 7px 0;
+}
+.ca-magin-tbl{
+	margin-top: 24px;
 }
 
 /* 헤더 */
@@ -181,6 +163,14 @@
 	font-size: 16px;
 	line-height: 30px;
 }
+.marginBox{
+	margin-top: 24px;
+}
+.big{
+	font-size: 24px;
+	line-height: 25px;
+	font-weight: 500;
+}
 
 /* 메인 */
 #ca-main{
@@ -216,55 +206,11 @@
 .ca-main-left>ul>li:nth-child(4){
 	background: url(../images/01_03.png) no-repeat;
 }
-/* 메인 우측 */
 .ca-main-right{
 	float: right;
 	width: 710px;
 }
-.ca-main-right li{
-	position: relative;
-	border: 1px solid #eee;
-	padding: 6px 0 6px 0;
-}
-.ca-main-1st>li:nth-child(1){
-	border-bottom: none !important;
-}
-.ca-main-1st>li:nth-child(2){
-	border-right: none !important;
-}
-.ca-main-1st{
-	margin-bottom: 15px;
-}
-.ca-main-2nd{
-	margin-bottom: 15px;
-}
-.ca-main-2nd>li:nth-child(2),.ca-main-2nd>li:nth-child(4){
-	border-left: none;
-}
-.ca-main-2nd>li:nth-child(1),.ca-main-2nd>li:nth-child(2){
-	border-bottom: none;
-}
-.ca-main-3rd{
-	margin-bottom: 15px;
-}
-.ca-main-3rd>li:nth-child(2)>span:nth-child(2){
-	font-size: 14px;
-	color: #999;
-}
-.ca-main-3rd>li:nth-child(2)>span:nth-child(2){
-	right: 120px;
-}
-.ca-main-3rd>li:nth-child(2)>span:nth-child(3){
-	color: #222831 !important;
-	font-size: 14px;
-}
-.ca-main-3rd>li:nth-child(2)>span:nth-child(3)>span.blur{
-	color: #222831 !important;
-	font-size: 14px;
-}
-.ca-main-4th{
-	margin-bottom: 15px;
-}
+/* 수익률, 원본문서 */
 #ca-revenue{
 	height: 109px;
 }
@@ -385,37 +331,6 @@
 	font-size: 16px;
 	margin-left: 90px;
 }
-/* 단지,세대정보  */
-.ca-tab-cont-danjiBox{
-	position: relative;
-}
-.ca-tab-cont-danji{
-	width: 100%;
-}
-.ca-tab-cont-danji>li{
-	position: relative;
-	width: 28%;
-	padding: 6px 0 6px 0;
-	border: 1px solid #eee;
-}
-.ca-tab-cont-danji>li:nth-child(1){
-	width: 16%;
-	height: 180px;
-	border-right: none;
-}
-.ca-danji-img{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.ca-tab-cont-danji>li:last-child{
-	width: 100%;
-	text-align: center;
-}
-/* 환경정보 */
-
-/* 건축물 정보 */
 
 .ca-notice{
 	padding: 24px 0 24px 0;
