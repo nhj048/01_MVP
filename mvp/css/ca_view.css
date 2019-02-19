@@ -4,6 +4,15 @@
 @import url(GDbg.css);
 @import url(GDset.css);
 
+.ca-pos-box{
+	position: relative;
+}
+.ca-full-box{
+	width: 100%;
+}
+.ca-full-box>li{
+	border: 1px solid #eee;
+}
 .ca-inbox{
 	position: relative;
 	width: 1150px;
@@ -12,6 +21,9 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 	border-bottom: 1px solid #eee;
+}
+.marginBox{
+	margin-top: 24px;
 }
 .big{
 	font-size: 24px;
@@ -23,7 +35,7 @@
 	font-weight: 500;
 	float: left;
 	padding-left: 20px;
-	line-height: 46px;
+	/*line-height: 46px;*/
 }
 .ca-main-txt{
 	position: absolute;
@@ -32,11 +44,34 @@
 	padding-right: 20px;
 	line-height: 46px;
 }
+.ca-cont-txt{
+	position: absolute;
+	text-align: right;
+	font-size: 14px;
+	top: 50%;
+	width: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	padding-right: 20px;
+	/*line-height: 46px;*/
+}
+.ca-cont-center-txt{
+	line-height: 46px;
+	font-size: 14px;
+}
 .point{
 	font-weight: 500;
 }
 .two{
 	line-height: 23px;
+	/*text-align: right;*/
+}
+.twoleft{
+	text-align: left;
+	line-height: 23px;
+}
+.ca-max-width{
+	max-width: 940px;
 }
 .blur{
 	float: right;
@@ -48,6 +83,32 @@
 .blurtxt{
 	color: #999;
 }
+.autoH>li{
+	padding: 6px 0 6px 0;
+}
+.ca-full{
+	position: relative;
+	width: 100%;
+}
+.ca-half{
+	position: relative;
+	width: 50%;
+}
+.ca-third{
+	position: relative;
+	width: 33.3%;
+}
+.ca-big-tit::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 15px;
+	height: 6px;
+	background-color: #00adb5;
+}
+
 /* 헤더 */
 #ca-header{
 	height: 50px;
@@ -159,12 +220,6 @@
 .ca-main-right{
 	float: right;
 	width: 710px;
-}
-.ca-main-full{
-	width: 100%;
-}
-.ca-main-half{
-	width: 50%;
 }
 .ca-main-right li{
 	position: relative;
@@ -330,22 +385,7 @@
 	font-size: 16px;
 	margin-left: 90px;
 }
-.ca-tab-cont-sojaejiBox{
-	position: relative;
-}
-.ca-big-tit::before{
-	content: "";
-	display: block;
-	position: absolute;
-	top: 12px;
-	left: 0;
-	width: 15px;
-	height: 6px;
-	background-color: #00adb5;
-}
-.marginBox{
-	margin-top: 24px;
-}
+/* 단지,세대정보  */
 .ca-tab-cont-danjiBox{
 	position: relative;
 }
@@ -355,11 +395,12 @@
 .ca-tab-cont-danji>li{
 	position: relative;
 	width: 28%;
+	padding: 6px 0 6px 0;
 	border: 1px solid #eee;
 }
 .ca-tab-cont-danji>li:nth-child(1){
 	width: 16%;
-	height: 144px;
+	height: 180px;
 	border-right: none;
 }
 .ca-danji-img{
@@ -367,4 +408,16 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.ca-tab-cont-danji>li:last-child{
+	width: 100%;
+	text-align: center;
+}
+/* 환경정보 */
+
+/* 건축물 정보 */
+
+.ca-notice{
+	padding-top: 60px;
+	color: #999;
 }
