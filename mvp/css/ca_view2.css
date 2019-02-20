@@ -4,6 +4,13 @@
 @import url(GDbg.css);
 @import url(GDset.css);
 
+#ca-tab-cont>.ca-inbox>div{
+	display: none;
+}
+#ca-tab-cont>.ca-inbox>div.on{
+	display: block;
+}
+
 table{
 	/*border: 1px solid #eee;*/
 	border-collapse: collapse;
@@ -74,10 +81,46 @@ tbody>tr:last-child{
 	font-size: 12px;
 	padding: 0 0 0 20px;
 }
+.ca-txt-center-tit{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px 0 10px 0 !important;
+	border: 1px solid #eee;
+}
+.ca-txt-center-txt{
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 6px 10px 6px !important;
+	border: 1px solid #eee;
+}
+.ca-big-tit-400{
+	font-size: 18px;
+	font-weight: 400;
+}
+.ca-big-tit-500{
+	font-size: 18px;
+	font-weight: 500;
+}
+.ca-small-txt{
+	font-size: 12px;
+}
 .color999{
 	color: #999;
 }
 .point{
+	font-weight: 500;
+}
+.point-color{
+	color: #fc5185;
+}
+.ca-bg-tit{
+	background-color: #fafafa;
+}
+.ca-bg-point{
+	background-color: rgba(0,173,181,0.2);
+}
+.ca-bg-point{
 	font-weight: 500;
 }
 tr.space {
@@ -86,11 +129,23 @@ tr.space {
 }
 tr.space>td{
 	padding: 8px 0 7px 0;
+	border-right: none;
 }
-.ca-magin-tbl{
+.ca-margin-tbl{
 	margin-top: 24px;
 }
-
+.ca-intbl tr{
+	border: none !important;
+}
+.ca-intbl th, .ca-intbl td{
+	border: none;
+	padding: 1px 6px 1px 6px;
+}
+.ca-link-btn{
+	padding: 5px 10px 5px 10px;
+	background-color: #4d4d4d;
+	color: #fff;
+}
 /* 헤더 */
 #ca-header{
 	height: 50px;

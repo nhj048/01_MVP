@@ -87,10 +87,10 @@ $(function() {
 
 var sViewsts = 0;
 
-$(".sangseView").click(function(e){
-	e.preventDefault();
-	$("#searchContBox>div, .btnBox").fadeToggle(100);
-	$("#searchContBox>div").eq(idx).fadeToggle(100);
+	$(".sangseView").click(function(e){
+		e.preventDefault();
+		$("#searchContBox>div, .btnBox").fadeToggle(100);
+		$("#searchContBox>div").eq(idx).fadeToggle(100);
 	});// click //
 
 	// 검색박스 메뉴 탭 클릭시 글자 변경
@@ -101,6 +101,7 @@ $(".sangseView").click(function(e){
 		// 탭 메뉴의 순번과 같은 컨텐츠 순번에 클래스 부여해서 보이게 하기
 		var idx = $(this).index();
 		$("#searchContBox>div").eq(idx).addClass('on').siblings().removeClass('on');
+
 	});// click //
 
 
