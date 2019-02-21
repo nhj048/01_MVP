@@ -1,8 +1,8 @@
 // linksys.js
 
 $(function(){
-	$(".ca-link").click(function(e) {
-		url = "../mvp/ca_view2.html";
+	$(".listBox>div").click(function(e) {
+		url = "../mvp_php/ca_view2.php";
 		window.open(url, '', 'width='+sw+',height='+sh+',top=0 ,left='+ml+',resizable=no, scrollbar=yes');
 	
 	});
@@ -16,7 +16,7 @@ $(function(){
 
 	$(".ca-document-link").click(function(e) {
 		e.preventDefault();
-		url = "../mvp/ca_view2.html?pno=1";
+		url = "../mvp_php/ca_view2.php?pno=1";
 		window.open(url, '', 'width='+sw+',height='+sh+',top=0 ,left='+ml+',resizable=no, scrollbar=yes');
 	});
 
